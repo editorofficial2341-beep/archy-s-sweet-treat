@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archy's Sweet Treats - Bakery & Cake Shop | Alaknanda, Delhi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            background: #fff;
+            padding: 40px 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 3em;
+            color: #d63384;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        .hindi {
+            font-size: 1.5em;
+            color: #ff6b9d;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .rating {
+            font-size: 2em;
+            color: #ffc107;
+            margin-bottom: 10px;
+        }
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        .contact-info {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            margin: 40px 0;
+            text-align: center;
+        }
+        .contact-item {
+            display: inline-block;
+            margin: 10px 20px;
+            font-size: 1.3em;
+        }
+        .phone-link {
+            color: #28a745;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .phone-link:hover {
+            color: #218838;
+        }
+        .address {
+            font-size: 1.1em;
+            margin: 20px 0;
+            color: #555;
+        }
+        .section {
+            background: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin: 40px 0;
+        }
+        .section h2 {
+            color: #d63384;
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        .review-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 5px solid #ff6b9d;
+        }
+        .review-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .stars {
+            color: #ffc107;
+            margin-left: 10px;
+        }
+        .review-author {
+            font-weight: bold;
+            color: #d63384;
+        }
+        .review-text {
+            color: #555;
+            font-style: italic;
+        }
+        .owner-response {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            font-size: 0.95em;
+        }
+        .map-container {
+            height: 400px;
+            background: #e0e0e0;
+            border-radius: 15px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            color: #666;
+        }
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff6b9d, #d63384);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.3em;
+            font-weight: bold;
+            margin: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(214, 51, 132, 0.4);
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 2em; }
+            .stats { flex-direction: column; gap: 10px; }
+            .reviews-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>🍰 Archy's Sweet Treats</h1>
+            <div class="hindi">आर्की'स स्वीट ट्रीट्स</div>
+            <div class="rating">⭐ 4.8 (35 Reviews)</div>
+            <p style="font-size: 1.4em; color: #666;">Bakery and Cake Shop</p>
+            <div class="stats">
+                <div>🎂 Custom Cakes</div>
+                <div>🍪 Fresh Pastries</div>
+                <div>🥮 Festival Specials</div>
+            </div>
+        </header>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <h2 style="color: #d63384; margin-bottom: 20px;">📍 Visit Us</h2>
+            <div class="address">
+                Terrace Floor, Narmada Apartments<br>
+                117, Alaknanda, South Delhi<br>
+                Delhi 110019
+            </div>
+            <div class="contact-item">
+                📞 <a href="tel:+919999300847" class="phone-link">099993 00847</a>
+            </div>
+            <div class="contact-item">
+                💬 <a href="https://wa.me/919999300847" class="phone-link" target="_blank">WhatsApp Order</a>
+            </div>
+            <div style="margin-top: 20px;">
+                <a href="https://maps.google.com/?q=G6GX+GC+Alaknanda,+New+Delhi,+Delhi" class="cta-button" target="_blank">🗺️ Get Directions</a>
+            </div>
+        </div>
+
+        <!-- Hours -->
+        <div class="section">
+            <h2>🕒 Hours</h2>
+            <div style="text-align: center; font-size: 1.5em;">
+                Open Now · Closes at 7 PM
+            </div>
+        </div>
+
+        <!-- Reviews -->
+        <div class="section">
+            <h2>💬 What Our Customers Say</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-author">Mehvash Haider</span>
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="review-text">
+                        "I got a dinosaur based chocolate cake made for my son’s fifth birthday. The cake was made beautifully and was packed well for transport. The taste was simply amazing, much better than any of the commercially available big brands... thanks so much the very talented Archana!"
+                    </div>
+                    <div class="owner-response">
+                        <strong>Owner:</strong> Thank you so much Mehvash for your kind words. Looking forward to serving you again soon!
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-author">Aditya Chakraborty</span>
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="review-text">
+                        "Ordered 2 kg of SugarFree healthy Gujiya for Holi. Cost is justified based on the ingredients. My family was happy with the food."
+                    </div>
+                    <div class="owner-response">
+                        <strong>Owner:</strong> Thank you so much for your kind words. Looking forward to serving you again soon!
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-author">Kishalay</span>
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="review-text">
+                        "Archy's Sweet Treat is an absolute gem! Her bakery products are not just delicious but also crafted with such precision and care that every bite feels like a treat for the senses."
+                    </div>
+                    <div class="owner-response">
+                        <strong>Owner:</strong> Thank you so much for your kind words. Looking forward to serving you again soon!
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 30px;">
+                <p style="font-size: 1.2em; color: #666;">+32 More 5-Star Reviews</p>
+                <a href="https://goo.gl/maps/example" class="cta-button" target="_blank">See All Reviews on Google</a>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div style="text-align: center; padding: 40px; background: linear-gradient(45deg, #ff6b9d, #d63384); color: white; border-radius: 20px; margin: 40px 0;">
+            <h2 style="font-size: 2.5em; margin-bottom: 20px;">Ready for Sweetness? 🎉</h2>
+            <p style="font-size: 1.3em; margin-bottom: 30px;">Order your custom cake or pastries today!</p>
+            <a href="https://wa.me/919999300847?text=Hi!%20I'd%20like%20to%20order%20a%20cake." class="cta-button" style="background: white; color: #d63384;">🍰 WhatsApp Order Now</a>
+        </div>
+
+        <!-- Footer -->
+        <footer style="text-align: center; padding: 30px; color: #666; font-size: 0.9em;">
+            <p>&copy; 2024 Archy's Sweet Treats | Spreading Sweetness & Smiles in Delhi</p>
+        </footer>
+    </div>
+
+    <script>
+        // Simple smooth scroll for anchor links (if needed)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
